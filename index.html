@@ -39,20 +39,16 @@
 
         //Declare a function that converts the first letter to uppercase
         function capitalize (word){
-            //Convert string to array
-            word = word.split('');
             //Convert the lowercase first letter to uppercase
-            let firstLetterUpper = word[0].toUpperCase;
+            let firstLetterUpper = word.charAt(0).toUpperCase();
             //Display the first letter
             return firstLetterUpper;
         }
 
         //Declare a function that returns the last letter of the string
         function lastLetter(word){
-            //Convert string to array
-            word = word.split('');
             //Display the last letter
-            return word[0];
+            return word.charAt(word.length - 1);
         }
 
         //Declare a variable to store the reference of the total class
@@ -62,10 +58,10 @@
         let secondPara = document.querySelector('.product');
 
         //Declare a variable to store the reference of the firstLetter class
-        let thirdPara = document.querySelector('.capitalize');
+        let thirdPara = document.querySelector('.firstLetter');
 
         //Declare a variable to store the reference of the lastLetter class
-        let fourthPara = document.querySelector('lastLetter');
+        let fourthPara = document.querySelector('.lastLetter');
 
         //Invoke the function that adds a number by 7 and assign on the first variable with textContent property
         firstPara.textContent = add7(10);
